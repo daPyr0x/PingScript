@@ -5,9 +5,9 @@ echo "--OUTAGE DETECTED--" >> $FILENAME
 date +%d.%m.%y' '%R:%S >> $FILENAME
 
 ./pingscript.sh google.ca &
-./pingscript.sh 99.250.34.15 &
+./pingscript.sh ip.address &
 ./tracescript.sh google.ca &
-./tracescript.sh 99.250.34.15 &
+./tracescript.sh ip.address &
 wait
 
 echo "SCRIPT ENDED" >> $FILENAME
